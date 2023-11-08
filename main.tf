@@ -1,4 +1,5 @@
-module "website" {
+module "website_with_SSL_arni" {
     source      = "./modules/static-site"
-    domain_name = "dblencowe.wtf"
+    prefix      = var.prefix
+    domain_name = "arni.com"
 }
